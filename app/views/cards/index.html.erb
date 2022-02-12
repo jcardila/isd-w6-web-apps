@@ -1,0 +1,28 @@
+<% 
+    numeros = ["2","3","4","5","6","7","8","9","10","ace","jack","queen","king"]
+    pintas = ["clubs","diamonds","spades","hearts"]
+
+    numero1 = numeros.sample
+    pinta1 = pintas.sample
+    numero2 = numeros.sample
+    pinta2 = pintas.sample
+    numero3 = numeros.sample
+    pinta3 = pintas.sample
+    numero4 = numeros.sample
+    pinta4 = pintas.sample
+    numero5 = numeros.sample
+    pinta5 = pintas.sample
+%>
+
+<h1>Roll the cards</h1>
+<p>
+    <img src="/images/cards/<%= numero1 %>_of_<%= pinta1 %>.svg">
+    <img src="/images/cards/<%= numero2 %>_of_<%= pinta2 %>.svg">
+    <img src="/images/cards/<%= numero3 %>_of_<%= pinta3 %>.svg">
+    <img src="/images/cards/<%= numero4 %>_of_<%= pinta4 %>.svg">
+    <img src="/images/cards/<%= numero5 %>_of_<%= pinta5 %>.svg">
+</p>
+
+<p>
+    <a href="/cards">Roll again!<a/>
+</p>

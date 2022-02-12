@@ -1,0 +1,13 @@
+<% fillings = ["Carnitas", "Al Pastor", "Steak", "Fish", "Veggies"] %>
+<%
+# Cuando se quiere que imprima el rubi utilizar <%= si no quiere que imprima nada solo <% (sin igual)
+%>
+
+<h1>Tacos!</h1>
+<ul>
+    <% for filling in fillings %>
+        <li><%= filling %></li>
+    <% end %>
+</ul>
+
+<p>Currently there are <%= fillings.size %> kinds of tacos</p>
